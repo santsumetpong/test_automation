@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16a46107-3a44-46de-bfff-18b123c8bc66" name="Changes" comment="test delete">
+    <list default="true" id="16a46107-3a44-46de-bfff-18b123c8bc66" name="Changes" comment="rename to integrate with pytest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test_api.py.executor": "Run",
     "Python.api_test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -97,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749695579437</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="rename to integrate with pytest">
+      <option name="closed" value="true" />
+      <created>1749696206916</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749696206916</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -106,6 +115,7 @@
     <MESSAGE value="test put" />
     <MESSAGE value="test patch" />
     <MESSAGE value="test delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="test delete" />
+    <MESSAGE value="rename to integrate with pytest" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename to integrate with pytest" />
   </component>
 </project>
