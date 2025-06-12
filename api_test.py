@@ -63,11 +63,49 @@ def test_create_new_post():
     print("test 3 passed!")
 
 
+def test_put_post():
+    print("\nrunning test: PUT post")
+    post_id = 2
+    url = f"https://jsonplaceholder.typicode.com/posts/{post_id}"
+    updated_post_data = {
+        "id": post_id,
+        "title": "updated test post title",
+        "body": "this is the updated content for the test post.",
+        "userId": 1
+    }
+
+    response = requests.put(url, json=updated_post_data)
+
+    assert response.status_code == 200, f"expected status code 200, but got {response.status_code}"
+    print(f"status code {response.status_code} updated")
+
+    response_data = response.json()
+
+    assert response_data["id"] == post_id, f"expected post id {post_id}, got {response_data["id"]}"
+    print(f"response data id {response_data["id"]} matches post id")
+
+    assert response_data["title"] == updated_post_data["title"], (f"expected post title {updated_post_data["title"]}, "
+                                                                  f"got {response_data["title"]}")
+    print(f"response title {response_data["title"]} matches post title")
+
+    assert response_data["body"] == updated_post_data["body"], (f"expected post body {updated_post_data["body"]}, "
+                                                                f"got {response_data["body"]}")
+    print(f"response body {response_data["body"]} matches post body")
+
+    assert response_data["userId"] == updated_post_data["userId"], (f"expected post user id {updated_post_data["userId"]}, "
+                                                                    f"got {response_data["userId"]}")
+    print(f"response user id {response_data["userId"]} matches post user id")
+
+    print("sucessfully updated post contents using PUT")
+    print("test 4 passed!")
+
+
 if __name__ == "__main__":
     try:
         test_get_all_posts()
         test_get_one_post()
         test_create_new_post()
+        test_put_post()
         print("\nall api tests passed successfully!")
     except AssertionError as e:
         print(f"\napi test failed: {e}")
