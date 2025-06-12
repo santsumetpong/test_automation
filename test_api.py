@@ -153,7 +153,7 @@ def test_delete_post():
     print("test 6 passed!")
 
 
-if __name__ == "__main__":
+"""if __name__ == "__main__":
     try:
         test_get_all_posts()
         test_get_one_post()
@@ -167,4 +167,4 @@ if __name__ == "__main__":
     except requests.exceptions.RequestException as e:
         print(f"\nnetwork/request error: {e}")
     except Exception as e:
-        print(f"\nunexpected error: {e}")
+        print(f"\nunexpected error: {e}")"""

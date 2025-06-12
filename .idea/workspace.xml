@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16a46107-3a44-46de-bfff-18b123c8bc66" name="Changes" comment="test patch">
+    <list default="true" id="16a46107-3a44-46de-bfff-18b123c8bc66" name="Changes" comment="test delete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749694594977</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test delete">
+      <option name="closed" value="true" />
+      <created>1749695579437</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749695579437</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -97,6 +105,7 @@
     <MESSAGE value="test get and post" />
     <MESSAGE value="test put" />
     <MESSAGE value="test patch" />
-    <option name="LAST_COMMIT_MESSAGE" value="test patch" />
+    <MESSAGE value="test delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="test delete" />
   </component>
 </project>
