@@ -134,6 +134,25 @@ def test_patch_post():
     print("test 5 passed!")
 
 
+def test_delete_post():
+    print("\nrunning test: DELETE post")
+    post_id = 4
+    url = f"https://jsonplaceholder.typicode.com/posts/{post_id}"
+
+    response = requests.delete(url)
+
+    assert response.status_code == 200, f"expected status code 200, got {response.status_code}"
+    print(f"status code {response.status_code} OK")
+
+    verification = requests.get(url)
+
+    assert verification.status_code == 404, f"expected status code 404, got {verification.status_code}"
+    print(f"status code {verification.status_code} OK, which means not found")
+
+    print("successfully removed post contents using DELETE")
+    print("test 6 passed!")
+
+
 if __name__ == "__main__":
     try:
         test_get_all_posts()
@@ -141,6 +160,7 @@ if __name__ == "__main__":
         test_create_new_post()
         test_put_post()
         test_patch_post()
+        test_delete_post()
         print("\nall api tests passed successfully!")
     except AssertionError as e:
         print(f"\napi test failed: {e}")
