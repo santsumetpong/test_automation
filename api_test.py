@@ -96,8 +96,42 @@ def test_put_post():
                                                                     f"got {response_data["userId"]}")
     print(f"response user id {response_data["userId"]} matches post user id")
 
-    print("sucessfully updated post contents using PUT")
+    print("successfully updated post contents using PUT")
     print("test 4 passed!")
+
+
+def test_patch_post():
+    print("\nrunning test: PATCH post")
+    post_id = 3
+    url = f"https://jsonplaceholder.typicode.com/posts/{post_id}"
+    updated_post_data = {
+        # "id": post_id,
+        "body": "bla bla bla!",
+    }
+
+    response = requests.patch(url, json=updated_post_data)
+
+    assert response.status_code == 200, f"expected status code 200, but got {response.status_code}"
+    print(f"status code {response.status_code} updated")
+
+    response_data = response.json()
+
+    assert response_data["id"] == post_id, f"expected post id {post_id}, got {response_data["id"]}"
+    print(f"response data id {response_data["id"]} matches post id")
+
+    assert response_data["body"] == updated_post_data["body"], (f"expected post body {updated_post_data["body"]}, "
+                                                                f"got {response_data["body"]}")
+    print(f"response body {response_data["body"]} matches post body")
+
+    og_post_response = requests.get(url)
+    og_post_data = og_post_response.json()
+
+    assert response_data["title"] == og_post_data["title"], "PATCH unexpectedly changed title"
+    assert response_data["userId"] == og_post_data["userId"], "PATCH unexpectedly changed userId"
+    print("other fields (title, userId) remained unchanged as expected.")
+
+    print("successfully updated post contents using PATCH")
+    print("test 5 passed!")
 
 
 if __name__ == "__main__":
@@ -106,6 +140,7 @@ if __name__ == "__main__":
         test_get_one_post()
         test_create_new_post()
         test_put_post()
+        test_patch_post()
         print("\nall api tests passed successfully!")
     except AssertionError as e:
         print(f"\napi test failed: {e}")

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16a46107-3a44-46de-bfff-18b123c8bc66" name="Changes" comment="test get and post">
+    <list default="true" id="16a46107-3a44-46de-bfff-18b123c8bc66" name="Changes" comment="test put">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_test.py" afterDir="false" />
     </list>
@@ -73,12 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1749590886699</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test put">
+      <option name="closed" value="true" />
+      <created>1749693956080</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749693956080</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="test get and post" />
-    <option name="LAST_COMMIT_MESSAGE" value="test get and post" />
+    <MESSAGE value="test put" />
+    <option name="LAST_COMMIT_MESSAGE" value="test put" />
   </component>
 </project>
